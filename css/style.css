@@ -1,0 +1,434 @@
+@charset "UTF-8";
+/* ╨Р╨┤╨░╨┐╤В╨░╤Ж╨╕╤П */
+/* ╨и╤А╨╕╤Д╤В╨╛╨▓╤Л╨╣ ╨Ь╨╕╨║╤Б╨╕╨╜ */
+/* ╨Ю╨┐╤А╨╡╨┤╨╡╨╗╤П╨╡╨╝ ╤И╤А╨╕╤Д╤В╤Л */
+/*$main-font: 'Myriad Pro-Regular', sans-serif;
+$header-first_font: 'AvantGardeGothicC-Book', sans-serif;
+$header-second_font: 'AvantGardeGothic-Bold', sans-serif;
+$sidebar-font: 'AvantGardeGothicCTT-Regular', sans-serif;
+$quote-font: 'Times New Roman', Times, serif;*/
+@import url(https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic,cyrillic-ext,latin-ext);
+.wrapper {
+  padding-top: 20px;
+}
+
+.header_top {
+  margin-bottom: 20px;
+}
+
+.header_bottom {
+  font-family: 'PT Sans', sans-serif;
+}
+.header_bottom .container {
+  -moz-box-shadow: 0 30px 30px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 30px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.1);
+}
+
+.bg-gray {
+  background: #ECEEF1;
+}
+
+.p50 {
+  padding: 50px 0;
+}
+
+.pt20-pb-15 {
+  padding: 20px 0 15px;
+}
+
+/* footer to bottom */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.page-wrapper {
+  min-height: 100%;
+  margin-bottom: -100px;
+}
+
+* html .page-wrapper {
+  height: 100%;
+}
+
+.page-buffer {
+  height: 100px;
+}
+
+/* end footer to bottom */
+.header {
+  padding: 20px 0 10px 0;
+  font-family: 'PT Sans', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: white;
+}
+.header .logo {
+  margin-right: 30px;
+}
+@media only screen and (max-width: 767px) {
+  .header .logo {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+.header .logo:hover {
+  text-decoration: none;
+}
+.header .slogan {
+  font-size: 20px;
+  font-style: italic;
+  color: #9AB4C4;
+  font-family: Georgira;
+}
+@media only screen and (max-width: 767px) {
+  .header .slogan {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+.header address {
+  text-align: right;
+  position: relative;
+}
+@media only screen and (max-width: 767px) {
+  .header address {
+    text-align: center;
+  }
+}
+.header address .phone {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3E596A;
+  position: relative;
+}
+@media only screen and (max-width: 481px) {
+  .header address .phone {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+.header address .phone:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background: url("../img/phone.png") center center no-repeat;
+  display: block;
+  position: absolute;
+  left: -40px;
+  top: 1px;
+}
+.header address .button {
+  font-size: 16px;
+  background: #00C0FF;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: white;
+  margin-left: 20px;
+}
+.header address .button:hover {
+  text-decoration: none;
+  background: #FF002A;
+}
+.header nav.navbar-default {
+  background: none;
+  border: none;
+}
+.header nav.navbar-default a.navbar-brand {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .header nav.navbar-default a.navbar-brand {
+    display: block;
+  }
+}
+.header nav.navbar-default div.navbar-collapse {
+  border: none;
+  text-align: center;
+}
+.header nav.navbar-default ul.navbar-nav {
+  float: none;
+  display: inline-block;
+}
+@media only screen and (max-width: 767px) {
+  .header nav.navbar-default ul.navbar-nav {
+    display: block;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header nav.navbar-default ul.navbar-nav li {
+    margin-bottom: 10px;
+  }
+}
+.header nav.navbar-default ul.navbar-nav li a {
+  color: #3E596A;
+  background: none;
+  padding: 0;
+  margin-right: 20px;
+  border-bottom: 2px solid #00C0FF;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
+@media only screen and (max-width: 991px) {
+  .header nav.navbar-default ul.navbar-nav li a {
+    font-size: 14px;
+  }
+}
+.header nav.navbar-default ul.navbar-nav li a:hover {
+  border-bottom: 2px solid #FF002A;
+}
+@media only screen and (max-width: 767px) {
+  .header nav.navbar-default ul.navbar-nav li a:hover {
+    border-bottom: 2px solid #FF002A;
+  }
+}
+.header nav.navbar-default form {
+  display: inline-block;
+  position: relative;
+}
+.header nav.navbar-default form input {
+  border-radius: 10px;
+  border: 1px solid #B6C3CD;
+}
+.header nav.navbar-default form input:focus {
+  border: 1px solid #00C0FF;
+  border-radius: 10px;
+}
+.header nav.navbar-default form button {
+  background: url("../img/find.png") center center no-repeat;
+  height: 17px;
+  width: 17px;
+  border: none;
+  position: absolute;
+  right: 10px;
+  top: 3px;
+}
+
+/* end header */
+.section {
+  font-family: 'PT Sans', sans-serif;
+}
+.section h1 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #3E596A;
+  margin: 0 0 20px 0;
+}
+.section address {
+  margin-bottom: 40px;
+}
+.section address span {
+  font-size: 16px;
+  font-style: italic;
+  color: #9AB4C4;
+}
+.section address a.button {
+  margin-left: 10px;
+  background: #FF002A;
+  padding: 5px 15px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50px;
+}
+.section address a.button:hover {
+  text-decoration: none;
+  background: #00C0FF;
+}
+.section address a.button:focus {
+  text-decoration: none;
+}
+.section .map {
+  display: none;
+}
+.section .feedback {
+  width: 50%;
+  margin: 40px auto 0;
+  background: #F9F9F9;
+  padding: 20px 50px;
+  text-align: center;
+}
+@media only screen and (max-width: 991px) {
+  .section .feedback {
+    width: 100%;
+  }
+}
+.section .feedback h2 {
+  font-size: 18px;
+  color: #3E596A;
+  font-weight: bold;
+  margin: 0 0 30px 0;
+  text-align: left;
+}
+.section .feedback dl.dl-horizontal dt {
+  font-size: 14px;
+  font-weight: normal;
+  color: #9C9C9C;
+}
+.section .feedback dl.dl-horizontal dt i {
+  color: red;
+}
+.section .feedback dl.dl-horizontal input, .section .feedback dl.dl-horizontal textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #B6C3CD;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+.section .feedback button {
+  margin-left: 10px;
+  background: #FF002A;
+  padding: 5px 15px;
+  color: white;
+  font-size: 17px;
+  font-weight: normal;
+  border-radius: 50px;
+  border: none;
+}
+.section .feedback button:hover {
+  background: #00C0FF;
+}
+
+/* end section */
+.footer {
+  font-family: 'PT Sans', sans-serif;
+}
+.footer .logo {
+  font-size: 14px;
+  color: red;
+}
+@media only screen and (max-width: 767px) {
+  .footer .logo {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer nav {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+.footer nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer nav ul li {
+  margin-bottom: 5px;
+  width: 50%;
+  float: left;
+}
+@media only screen and (max-width: 767px) {
+  .footer nav ul li {
+    width: auto;
+    float: none;
+  }
+}
+.footer nav ul li a {
+  text-decoration: underline;
+}
+.footer nav ul li a:hover {
+  text-decoration: none;
+}
+.footer address {
+  text-align: right;
+}
+@media only screen and (max-width: 767px) {
+  .footer address {
+    text-align: center;
+  }
+}
+.footer address div {
+  margin-bottom: 10px;
+}
+.footer address div a.phone {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3E596A;
+  position: relative;
+  margin-bottom: 10px;
+}
+.footer address div a.phone:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background: url("../img/phone.png") center center no-repeat;
+  display: block;
+  position: absolute;
+  left: -40px;
+  top: 1px;
+}
+.footer address div a.button {
+  font-size: 16px;
+  background: #00C0FF;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: white;
+  margin-left: 20px;
+}
+.footer address div a.button:hover {
+  text-decoration: none;
+  background: #FF002A;
+}
+
+.popup-box {
+  position: absolute;
+  border-radius: 5px;
+  background: #fff;
+  display: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  z-index: 9999999;
+  font-size: 14px;
+}
+.popup-box .close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  color: #434343;
+  padding: 20px;
+  font-size: 20px;
+}
+.popup-box .close:hover {
+  color: #000;
+}
+.popup-box h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+.popup-box .bottom {
+  background: #eee;
+  border-top: 1px solid #e5e5e5;
+  padding: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.popup-box .top {
+  padding: 20px;
+}
+.popup-box #blackout {
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  z-index: 999999;
+  left: 0;
+  display: none;
+}

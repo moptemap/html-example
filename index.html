@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Пример вёрстки</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+<div class="page-wrapper" id="page-wrapper">
+    <header class="header" id="header">
+        <div class="wrapper header_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a class="logo" href="#">
+                            <img src="img/logo.png" alt="logo">
+                        </a>
+                        <span class="slogan">
+                            Слоган компании
+                        </span>
+                    </div>
+                    <div class="col-sm-6">
+                        <address>
+                            <a href="" class="phone">(017) 123-45-64</a>
+                            <a href="#" class="button">Перезвоните мне</a>
+                        </address>
+                    </div>
+                </div> <!-- //row -->
+            </div> <!-- //container -->
+        </div> <!-- //wrapper -->
+        <div class="wrapper header_bottom">
+            <div class="container">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">Меню</a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="#">О компании</a>
+                                </li>
+                                <li>
+                                    <a href="#">Каталог</a>
+                                </li>
+                                <li>
+                                    <a href="#">Полезная информация</a>
+                                </li>
+                                <li>
+                                    <a href="#">Где купить</a>
+                                </li>
+                                <li>
+                                    <form action="/">
+                                        <input type="text">
+                                        <button type="submit"></button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+            </div> <!-- //container -->
+        </div> <!-- //wrapper -->
+    </header>
+
+    <section class="section" id="section">
+        <div class="wrapper p50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Связаться с нами</h1>
+                        <address>
+                            <span>Наш адрес: г.Минск пр. Независимости 1</span>
+                            <a class="button" id="mapButton" href="#">Мы на карте</a>
+                        </address>
+                        <div class="map" id="map">
+                            <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=u7wYUO2Dp6DTcbVKSsZOSNmRkZOVJhqU&height=400&lang=ru_RU&sourceType=constructor"></script>
+                        </div>
+                        <div class="feedback">
+                            <form action="/">
+                                <h2>Обратная связь</h2>
+                                <dl class="dl-horizontal">
+                                    <dt>Сообщение<i>*</i></dt>
+                                    <dd>
+                                        <textarea></textarea>
+                                    </dd>
+                                    <dt>Как вас зовут?</dt>
+                                    <dd>
+                                        <input type="text">
+                                    </dd>
+                                    <dt>Телефон<i>*</i></dt>
+                                    <dd>
+                                        <input type="text">
+                                    </dd>
+                                    <dt>Эл. почта<i>*</i></dt>
+                                    <dd>
+                                        <input type="text">
+                                    </dd>
+                                </dl>
+                                <button type="submit">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div> <!-- //row -->
+            </div> <!-- //container -->
+        </div> <!-- //wrapper -->
+    </section>
+    <div class="page-buffer" id="page-buffer"></div>
+</div>
+<footer class="footer" id="footer">
+    <div class="wrapper bg-gray pt20-pb-15">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="#" class="logo">
+                        Лого маленькое
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <nav>
+                        <ul class="menu">
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Где купить</a></li>
+                            <li><a href="#">Полезная информация</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-sm-4">
+                    <address>
+                        <div>
+                            <a href="" class="phone">(017) 123-45-64</a><br>
+                        </div>
+                        <div>
+                            <a href="#" class="button">Перезвоните мне</a>
+                        </div>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
